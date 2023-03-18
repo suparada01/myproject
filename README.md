@@ -1,6 +1,6 @@
 # Welcome Fitness Club
 
-![1](images/src/assets/images/1.jpg)
+![1](https://user-images.githubusercontent.com/110576987/226110877-cc5e033b-74a3-41a1-9507-6ba2f9f82853.jpg)
 สมาชิกในกลุ่ม
 
 1. 6310110016 นายกฤษกร ปิดดำ 
@@ -14,7 +14,8 @@
 หน้า Home มีในส่วนของ Exercises , SecarhExercises
 
 ในส่วนของ Exercises เป็นการแสดงท่าออกกำลังกายที่ดึงข้อมูลมา ใช้คำสั่ง await fetchData ในการดึงข้อมูล เพื่อนำมาแสดงหมวดหมู่ ท่าออกกำลังกาย
-//รูป
+![3](https://user-images.githubusercontent.com/110576987/226110901-dcfe8bf8-4522-4ef8-8fcc-2bd5e5debd03.jpg)
+![7](https://user-images.githubusercontent.com/110576987/226110940-bfd2fdc4-ac89-45f6-8d00-90c0414b22f6.jpg)
 ```javascript  
 useEffect(() => {
 const  fetchExercisesData = async () => {
@@ -32,7 +33,7 @@ fetchExercisesData();
 }, [bodyPart]);
 ```
 ในส่วนของ SecarhExercises เป็นการให้ค้นหาท่าออกกำลังกาย จะใช้ API ที่ฟังก์ชันในการค้นหา
-รูป//
+![2](https://user-images.githubusercontent.com/110576987/226110893-b30957ee-7724-4878-8d6a-fa784a85b991.jpg)
 ```javascript 
 const  SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 const [search, setSearch] = useState('');
@@ -63,7 +64,7 @@ setExercises(searchedExercises);
 ## หน้า Detail Exercises
 
 เป็นการแสดงรายละเอียดของท่าออกกำลังกายแต่ละท่า แสดงรูปท่าออกกำลังกาย  วิดีโอท่าออกกำลังกาย
-//รูป
+![4](https://user-images.githubusercontent.com/110576987/226110908-83f1e62f-35a6-400d-aeba-edbb2710ef5c.jpg)
 ```javascript 
 useEffect(() => {
 
@@ -94,7 +95,7 @@ fetchExercisesData();
 ```
 
 ## Viedo Exercises
-//รูป
+![5](https://user-images.githubusercontent.com/110576987/226110919-c2d32ded-00f8-4c3b-bd04-b77a67b34e47.jpg)
 แสดง exercise videos ที่เกี่ยวข้องกับท่าออกกำลังกาย จากกำหนดตัวแปรท่าออกกำลังกาย
 ```javascript
 href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
@@ -103,5 +104,5 @@ href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
 ## env
 
 เราสามารถกำหนดค่าของ ตัวแปรต่างๆที่จำเป็นสำหรับใช้ใน project ร่วมกันได้ ทำให้ง่ายต่อการจัดการมากยิ่งขึ้น และยังมีความสำคัญเกี่ยวกับเรื่องความปลอดภัยด้วย
-//รูป
+![8](https://user-images.githubusercontent.com/110576987/226110955-0bf0c086-4302-43bf-9789-302e27d106fb.jpg)
 
