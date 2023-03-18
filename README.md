@@ -14,6 +14,7 @@
 หน้า Home มีในส่วนของ Exercises , SecarhExercises
 
 ในส่วนของ Exercises เป็นการแสดงท่าออกกำลังกายที่ดึงข้อมูลมา ใช้คำสั่ง await fetchData ในการดึงข้อมูล เพื่อนำมาแสดงหมวดหมู่ ท่าออกกำลังกาย
+
 ![3](https://user-images.githubusercontent.com/110576987/226110901-dcfe8bf8-4522-4ef8-8fcc-2bd5e5debd03.jpg)
 ![7](https://user-images.githubusercontent.com/110576987/226110940-bfd2fdc4-ac89-45f6-8d00-90c0414b22f6.jpg)
 ```javascript  
@@ -33,6 +34,7 @@ fetchExercisesData();
 }, [bodyPart]);
 ```
 ในส่วนของ SecarhExercises เป็นการให้ค้นหาท่าออกกำลังกาย จะใช้ API ที่ฟังก์ชันในการค้นหา
+
 ![2](https://user-images.githubusercontent.com/110576987/226110893-b30957ee-7724-4878-8d6a-fa784a85b991.jpg)
 ```javascript 
 const  SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
@@ -64,6 +66,7 @@ setExercises(searchedExercises);
 ## หน้า Detail Exercises
 
 เป็นการแสดงรายละเอียดของท่าออกกำลังกายแต่ละท่า แสดงรูปท่าออกกำลังกาย  วิดีโอท่าออกกำลังกาย
+
 ![4](https://user-images.githubusercontent.com/110576987/226110908-83f1e62f-35a6-400d-aeba-edbb2710ef5c.jpg)
 ```javascript 
 useEffect(() => {
